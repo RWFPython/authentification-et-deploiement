@@ -25,7 +25,11 @@ SECRET_KEY = '57!f9*f7!yx@#)z@2!8@%%#vy1u)eqt*c)-*9oa)-d91*%eous'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'boiling-thicket-56099.herokuapp.com',
+    '127.0.0.1',
+    'localhost'
+    ]
 
 
 # Application definition
