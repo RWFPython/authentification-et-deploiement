@@ -37,6 +37,7 @@ ALLOWED_HOSTS = [
 INSTALLED_APPS = [
     'learning_logs',
     'users',
+    'django_admin_material',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,8 +45,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap4',
+    'controlcenter',
     
 ]
+
+CONTROLCENTER_DASHBOARDS = (
+    ('mydash', 'learning_log.dashboard.MyDashboard'),
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

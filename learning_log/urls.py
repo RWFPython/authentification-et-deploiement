@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from controlcenter.views import controlcenter
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('admin/dashboard/', controlcenter.urls),
     path('users/', include('users.urls')),
     path('', include('learning_logs.urls')),
 ]
